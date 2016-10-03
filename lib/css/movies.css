@@ -1,0 +1,62 @@
+div#box-poster{
+  float: left;
+  max-width: 20%
+}
+div#box-poster img{
+  max-height: 350px;
+  border-radius: 2px;
+  max-width: 99%;
+}
+div#box-movie{
+  padding-left: 20px;
+  max-width: 78%;
+  float: left;
+}
+div#box-movie h1#name-movie{
+  color: #e5e5e5;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 .5em;
+  text-decoration: none;
+  min-width: 6em;
+  transition: all 400ms;
+  cursor: default;
+  z-index: 10;
+}
+div#box-movie p{
+  color: #e5e5e5;
+  display: inline-block;
+}
+div#box-movie div#infos-movie p#imdb-movie{
+  color: #f3ce00
+}
+div#box-movie div#sinopse-movie{
+  margin-top: 20px;
+  color: #e5e5e5;
+  margin-bottom: 20px
+}
+
+div#box-movie div#links-movie a{margin-right: 30px; box-shadow: 0px 0px 10px #008a3f}
+
+div.fb-comments{
+  width: 100%;
+  padding: 25px;
+  margin-top: 25px;
+  padding-left: 0;
+}
+
+div.parceiros{
+  padding-top: 50px;
+}
+
+ @media screen and (max-width: 1000px){
+   
+	 div#box-poster, div#box-movie{
+		 float: none;
+     max-width: 100%;
+     text-align: center;
+   }
+   div.fb-comments{
+    padding-left: 0;
+   }
+ }

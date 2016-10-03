@@ -1,0 +1,54 @@
+body{
+  background: linear-gradient(270deg, #0dc55b, #0d62c5);
+  background-size: 400% 400%;
+
+  -webkit-animation: bgAnimate 11s ease infinite;
+  -moz-animation: bgAnimate 11s ease infinite;
+  animation: bgAnimate 11s ease infinite;
+}
+
+div#main{
+  width: 320px;
+  padding: 50px 0 0;
+  margin: auto;
+}
+div#main h1{
+  text-align: center;
+}
+div#main h1 img{
+  height: 125px
+}
+
+div#message{display: none; color: #fff; width: 100%; margin: 5px 0; padding: 10px; box-shadow: 0 1px 1px 0 rgba(0,0,0,.1); font-family: Arial, sans-serif; font-size: 1.05em;}
+div.error{background-color: rgb(220,100,100); border-left: 4px solid #dd3d36;}
+div.success{background-color: rgb(90, 202, 71); border-left: 4px solid #35981C;}
+
+div#main form#administration_form{
+  margin-top: 20px;
+  padding: 26px 24px 46px;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+  box-shadow: 0 1px 3px rgba(0,0,0,.13);
+}
+div#main form#administration_form input[type='email']{
+  margin-bottom: 0px
+}
+
+
+
+
+@-webkit-keyframes bgAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes bgAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bgAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

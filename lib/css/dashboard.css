@@ -1,0 +1,86 @@
+html, body{
+  height: 100%;
+  width: 100%
+}
+
+nav#menuPrincipal{
+  width: 25%;
+  padding: 10px 0;
+  background: rgb(60,60,60);
+  height: 100%;
+  box-shadow: 0px 0px 2px rgb(60,60,60);
+  position: fixed;
+}
+nav#menuPrincipal img{
+  width: 60%;
+  display: block;
+  margin: 10px auto;
+}
+nav#menuPrincipal ul{
+  padding: 0;
+}
+nav#menuPrincipal ul li{
+  padding: 6px 10px;
+  transition: all 400ms;
+}
+nav#menuPrincipal ul li:hover{
+  background: #0dc55b
+}
+
+nav#menuPrincipal ul li a{
+  color: #fff;
+  text-decoration: none
+}
+
+
+main{
+  height: 100%;
+  display: flex;
+  width: 75%;
+  margin-left: auto;
+}
+
+
+div#message{display: none; color: #fff; width: 90%; margin: 5px auto; padding: 10px; box-shadow: 0 1px 1px 0 rgba(0,0,0,.1); font-family: Arial, sans-serif; font-size: 1.05em;}
+div.error{background-color: rgb(220,100,100); border-left: 4px solid #dd3d36;}
+div.success{background-color: rgb(100,220,100); border-left: 4px solid #35981C;}
+
+
+
+div#boxForm{
+  width: 70%;
+  margin: 60px auto;
+}
+div#boxForm .form-style{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(200,200,200);
+  border-radius: 4px;
+  outline: none;
+  transition: all 400ms;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 3px rgba(0,0,0,.2);
+}
+div#boxForm .form-style:focus{
+  border-bottom-width: 3px;
+  border-bottom-color: #0dc55b;
+}
+div#boxForm .form-style:invalid{
+  border-bottom-width: 3px;
+  border-bottom-color: red;
+}
+div#boxForm .urlDownloadSub{
+  margin-left: 10px
+}
+div#boxForm input#legendUrl{display: none;}
+div#boxForm textarea{
+  resize: none;
+}
+div#boxForm input[type='submit']{
+  background: #0dc55b;
+  color: #fff;
+  border: solid 1px #0dc55b;
+  border-radius: 2px;
+  padding: 5px
+}
