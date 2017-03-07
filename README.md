@@ -1,10 +1,10 @@
 # MagTorrents
-Site de Download de Filmes MagTorrents
 
-#Como instalar?
-1) No arquivo head.inc.php que está na pasta "temps" altere, na segunda linha, o valor do href para a url atual do site.
+MagTorrents is a torrent site for downloading films.
 
-2) Em application/class/DB.class.php altere o nome do banco de dados ($name), o usuário ($root) e a senha($pass).
-Pronto, é só rodar.
+### How to install?
 
-Não se esqueça de importar o banco de dados (arquivo magtorre_db.sql).
+1. In the file `src/Config.php` edit the constant `BASE_URL` to the current site URL.
+2. In `src/Config.php` set the database constants `DB_HOST`, `DB_USER`, `DB_PASS` and `DB_NAME`.
+
+Then just browse to your local URL.
