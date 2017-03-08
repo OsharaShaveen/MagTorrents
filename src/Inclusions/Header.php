@@ -2,6 +2,8 @@
 
 namespace gabrielcarvalhogama\MagTorrents\Inclusions;
 
+use gabrielcarvalhogama\MagTorrents\App;
+
 class Header
 {
     public static function get()
@@ -18,36 +20,36 @@ class Header
       <li><a href="javascript:void()" class="arrow_bottom">Navegação</a>
         <ul class="submenu">
           <div class="rows_items">
-            <li><a href="/">Início</a></li>
+            <li><a href="' . App::link() . '">Início</a></li>
             <li><a href="http://online.magtorrents.com" target="_blank">Filmes Online</a></li>
-            <li><a href="/quem-somos">Quem somos</a></li>
-            <li><a href="contato">Contato</a></li>
+            <li><a href="' . App::link('quem-somos') . '">Quem somos</a></li>
+            <li><a href="' . App::link('contato') . '">Contato</a></li>
           </div>
           <div class="rows_items">
             <div>
-              <li><a href="generos/Acao">Ação</a></li>
-              <li><a href="generos/Terror">Terror</a></li>
-              <li><a href="generos/Suspense">Suspense</a></li>
-              <li><a href="generos/Guerra">Guerra</a></li>
+              <li><a href="' . App::link('generos/Acao') . '">Ação</a></li>
+              <li><a href="' . App::link('generos/Terror') . '">Terror</a></li>
+              <li><a href="' . App::link('generos/Suspense') . '">Suspense</a></li>
+              <li><a href="' . App::link('generos/Guerra') . '">Guerra</a></li>
             </div>
             <div>
-              <li><a href="generos/Nacional">Nacional</a></li>
-              <li><a href="generos/Aventura">Aventura</a></li>
-              <li><a href="generos/Ficcao">Ficção</a></li>
-              <li><a href="generos/Comedia">Comédia</a></li>
+              <li><a href="' . App::link('generos/Nacional') . '">Nacional</a></li>
+              <li><a href="' . App::link('generos/Aventura') . '">Aventura</a></li>
+              <li><a href="' . App::link('generos/Ficcao') . '">Ficção</a></li>
+              <li><a href="' . App::link('generos/Comedia') . '">Comédia</a></li>
             </div>
             <div>
-              <li><a href="generos/Animacao">Animação</a></li>
-              <li><a href="generos/Documentario">Documentário</a></li>
-              <li><a href="generos/Drama">Drama</a></li>
-              <li><a href="generos/Fantasia">Fantasía</a></li>
+              <li><a href="' . App::link('generos/Animacao') . '">Animação</a></li>
+              <li><a href="' . App::link('generos/Documentario') . '">Documentário</a></li>
+              <li><a href="' . App::link('generos/Drama') . '">Drama</a></li>
+              <li><a href="' . App::link('generos/Fantasia') . '">Fantasía</a></li>
             </div>
           </div>
         </ul>
       </li>
     </ul>
     <div id="box-search">
-      <form action="search" method="get">
+      <form action="' . App::link('search') . '" method="get">
         <input type="search" name="q" placeholder="Faça uma busca..." />
       </form>
     </div>
