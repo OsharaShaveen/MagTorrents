@@ -11,6 +11,7 @@ class App
     public function __construct()
     {
         define('ROOT_PATH', realpath('../'));
-        self::$db = new Db;
+        $database = new Db();
+        self::$db = $database::$db;
     }
 }
