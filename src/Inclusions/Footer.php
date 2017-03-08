@@ -7,9 +7,9 @@ class Footer
     public static function get()
     {
         return '
-<footer>
-  &copy; Copyright 2016-' . date("Y") . ' Magtorrents.com.br - All Rights Reserved
-</footer>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/plugins.min.js"></script>
+<script src="/assets/js/all.js"></script>
         ';
     }
 }
