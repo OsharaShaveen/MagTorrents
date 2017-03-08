@@ -3,24 +3,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-
-    <title>MagTorrents</title>
-    <?= \gabrielcarvalhogama\MagTorrents\Inclusions\Head::get() ?>
-    <link rel="stylesheet" href="lib/css/bootstrap.css"/>
-    <link rel="stylesheet" href="lib/css/plugins.css"/>
-    <link rel="stylesheet" href="lib/css/styles.css"/>
-    <link rel="stylesheet" href="lib/css/home.css"/>
-
-    <meta property="og:title" content="MagTorrents"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://magtorrents.com"/>
-    <meta property="og:image" content="http://magtorrents.com/lib/images/opengraph.jpg"/>
-    <meta property="og:image:width" content="514"/>
-    <meta property="og:image:height" content="384"/>
-    <meta property="og:description" content="Filmes a um download! Baixe todos os seus filmes favoritos!"/>
-
-</head>
+<?= \gabrielcarvalhogama\MagTorrents\Inclusions\Head::get() ?>
 <body>
 <?= \gabrielcarvalhogama\MagTorrents\Inclusions\Header::get() ?>
 <div id="main">
