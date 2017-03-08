@@ -1,8 +1,17 @@
+<?php
+
+namespace gabrielcarvalhogama\MagTorrents\Inclusions;
+
+class Footer
+{
+    public function __construct()
+    {
+        return '
 <header>
-  <div id="box-logo"><a href='/'><img src="lib/images/logo-magtorrents.png" /></a></div>
+  <div id="box-logo"><a href=\'/\'><img src="lib/images/logo-magtorrents.png" /></a></div>
   <nav>
     <ul>
-      <li><a href='javascript:void()' class="arrow_bottom">Navegação</a>
+      <li><a href=\'javascript:void()\' class="arrow_bottom">Navegação</a>
         <ul class="submenu">
           <div class="rows_items">
             <li><a href="home">Início</a></li>
@@ -61,4 +70,6 @@
   </select>
 
 
-</header>
+</header>';
+    }
+}
