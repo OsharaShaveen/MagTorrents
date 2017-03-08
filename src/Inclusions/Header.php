@@ -8,15 +8,19 @@ class Header
     {
         return '
 <header>
-  <div id="box-logo"><a href=\'/\'><img src="lib/images/logo-magtorrents.png" /></a></div>
+  <div id="box-logo">
+    <a href="">
+        <img src="/assets/images/logo-magtorrents.png" />
+    </a>
+  </div>
   <nav>
     <ul>
-      <li><a href=\'javascript:void()\' class="arrow_bottom">Navegação</a>
+      <li><a href="javascript:void()" class="arrow_bottom">Navegação</a>
         <ul class="submenu">
           <div class="rows_items">
-            <li><a href="home">Início</a></li>
+            <li><a href="/">Início</a></li>
             <li><a href="http://online.magtorrents.com" target="_blank">Filmes Online</a></li>
-            <li><a href="quem-somos">Quem somos</a></li>
+            <li><a href="/quem-somos">Quem somos</a></li>
             <li><a href="contato">Contato</a></li>
           </div>
           <div class="rows_items">
