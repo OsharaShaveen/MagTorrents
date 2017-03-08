@@ -20,7 +20,7 @@ class App
     public static function link($path = '/')
     {
         if (self::REWRITE_URLS) {
-            return $path;
+            return '/' . $path;
         } else {
             return '?pg=' . $path;
         }
