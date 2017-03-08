@@ -4,10 +4,6 @@
 
     <title>MagTorrents - Contato</title>
     <?=get_head()?>
-    <link rel="stylesheet" href="lib/css/bootstrap.css" />
-    <link rel="stylesheet" href="lib/css/plugins.css" />
-    <link rel="stylesheet" href="lib/css/styles.css" />
-    <link rel="stylesheet" href="lib/css/quem-somos.css" />
 
     <meta property="og:title" content="MagTorrents - Contato" />
     <meta property="og:type" content="website" />

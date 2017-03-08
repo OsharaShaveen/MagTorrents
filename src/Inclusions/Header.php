@@ -11,7 +11,7 @@ class Header
         return '
 <header>
   <div id="box-logo">
-    <a href="">
+    <a href="/">
         <img src="/assets/images/logo-magtorrents.png" />
     </a>
   </div>

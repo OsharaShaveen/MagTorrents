@@ -4,18 +4,6 @@
 
     <title>MagTorrents - <?=(isset($pg[1]) AND !empty($pg[1])) ? $pg[1]: "Gêneros" ; ?></title>
     <?=get_head()?>
-    <link rel="stylesheet" href="lib/css/bootstrap.css" />
-    <link rel="stylesheet" href="lib/css/plugins.css" />
-    <link rel="stylesheet" href="lib/css/styles.css" />
-    <link rel="stylesheet" href="lib/css/generos.css" />
-
-    <meta property="og:title" content="MagTorrents - <?=(isset($pg[1]) AND !empty($pg[1])) ? $pg[1]: "Gêneros" ; ?>" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="<?="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" />
-    <meta property="og:image" content="http://magtorrents.com/lib/images/opengraph.jpg" />
-    <meta property="og:image:width" content="514" />
-    <meta property="og:image:height" content="384" />
-    <meta property="og:description" content="Filtragem de filmes por gênero." />
   </head>
   <body>
     <?php include_once("temps/header.inc.php");?>
@@ -52,8 +40,5 @@
     </div>
 
     <?=get_footer()?>
-    <script src="lib/js/jquery.js"></script>
-    <script src="lib/js/plugins.js"></script>
-    <script src="lib/js/home.js"></script>
   </body>
 </html>

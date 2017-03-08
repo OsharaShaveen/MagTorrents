@@ -1,17 +1,18 @@
 <?php
+use gabrielcarvalhogama\MagTorrents as MT;
 
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-<?= \gabrielcarvalhogama\MagTorrents\Inclusions\Head::get() ?>
+<?= MT\Inclusions\Head::get() ?>
 <body>
-<?= \gabrielcarvalhogama\MagTorrents\Inclusions\Header::get() ?>
+<?= MT\Inclusions\Header::get() ?>
 <div id="main">
     <div id="slider-highlights">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <?php
-                $sql = \gabrielcarvalhogama\MagTorrents\App::$db->prepare("SELECT id_post, title, link, sinopse, poster, category, duration, year, size, quality FROM mt_posts ORDER BY id_post DESC");
+                $sql = MT\App::$db->prepare("SELECT id_post, title, link, sinopse, poster, category, duration, year, size, quality FROM mt_posts ORDER BY id_post DESC LIMIT 10");
 
                 $movie = new stdClass();
                 $sql->bind_result(
@@ -29,32 +30,30 @@
                 $sql->execute();
 
                 while ($sql->fetch()) {
-                    echo "<div class='swiper-slide'>",
-                    "<a href='movies/$movie->link'>",
-                    "<div class='info'>",
-                    "{$movie->title}",
-                    "</div>",
-                    "<img src='{$movie->poster}' />",
-                    "</div>",
-                    "</a>";
-                }
                 ?>
+                <div class="swiper-slide">
+                    <a href="<?= MT\App::link('movies/' . $movie->link) ?>">
+                        <div class="info">
+                            <?= $movie->title ?>
+                        </div>
+                        <img src="<?= $movie->poster ?>"/>
+                    </a>
+                </div>
             </div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <?php
+            }
+            ?>
         </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
-
-    <!-- Box de filmes -->
-
-    <?= \gabrielcarvalhogama\MagTorrents\Inclusions\Movies::get() ?>
-    <?= \gabrielcarvalhogama\MagTorrents\Inclusions\Partners::get() ?>
 </div>
 
-<?= \gabrielcarvalhogama\MagTorrents\Inclusions\Footer::get() ?>
-<script src="lib/js/jquery.js"></script>
-<script src="lib/js/plugins.js"></script>
-<script src="lib/js/home.js"></script>
+<!-- Box de filmes -->
+<?= MT\Inclusions\Movies::get() ?>
+<?= MT\Inclusions\Partners::get() ?>
+
+<?= MT\Inclusions\Footer::get() ?>
 </body>
 </html>
