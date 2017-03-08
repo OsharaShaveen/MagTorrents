@@ -4,7 +4,7 @@ namespace gabrielcarvalhogama\MagTorrents\Inclusions;
 
 class Header
 {
-    public function __construct()
+    public static function get()
     {
         return '
 <header>

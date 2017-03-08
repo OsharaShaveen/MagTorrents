@@ -4,7 +4,7 @@ namespace gabrielcarvalhogama\MagTorrents\Inclusions;
 
 class Head
 {
-    public function __construct()
+    public static function get()
     {
         return '
 <meta charset="utf-8" />

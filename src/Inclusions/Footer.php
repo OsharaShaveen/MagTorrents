@@ -4,7 +4,7 @@ namespace gabrielcarvalhogama\MagTorrents\Inclusions;
 
 class Footer
 {
-    public function __construct()
+    public function get()
     {
         return '
 <footer>

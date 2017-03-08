@@ -4,7 +4,7 @@ namespace gabrielcarvalhogama\MagTorrents\Inclusions;
 
 class Partners
 {
-    public function __construct()
+    public static function get()
     {
         return '
 <div id="parceiros" class="boxes">

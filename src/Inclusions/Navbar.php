@@ -4,7 +4,7 @@ namespace gabrielcarvalhogama\MagTorrents\Inclusions;
 
 class Navbar
 {
-    public function __construct()
+    public static function get()
     {
         return '
 <nav id="menuPrincipal">
