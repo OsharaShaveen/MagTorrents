@@ -11,7 +11,7 @@ class Movies
         if ($error == true) {
             echo "<h1 id='movies-404'>O filme não foi encontrado, confira alguns filmes abaixo ou utilize o menu de navegação.</h1>";
         }
-        $sql = App::$db->con()->prepare("SELECT id_post, title, link, sinopse, poster, category, duration, year, size, quality FROM mt_posts ORDER BY id_post DESC LIMIT 10");
+        $sql = App::$db->prepare("SELECT id_post, title, link, sinopse, poster, category, duration, year, size, quality FROM mt_posts ORDER BY id_post DESC LIMIT 10");
         $sql->execute();
         echo "<div id='all-movies' class='boxes'>",
         "<h1 class='section-title'>Filmes</h1>";

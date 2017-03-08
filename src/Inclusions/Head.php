@@ -2,7 +2,7 @@
 
 namespace gabrielcarvalhogama\MagTorrents\Inclusions;
 
-class Footer
+class Head
 {
     public function __construct()
     {
