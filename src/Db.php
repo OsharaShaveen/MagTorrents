@@ -4,10 +4,10 @@ namespace gabrielcarvalhogama\MagTorrents;
 
 class Db
 {
-    private static $db_host = "Oshara";
-    private static $db_user = "root";
-    private static $db_pass = "root";
-    private static $db_name = "Shaveen1234#";
+    private static $db_host = "unitedstates.database.windows.net";
+    private static $db_user = "Oshara";
+    private static $db_pass = "Shaveen1234#";
+    private static $db_name = "Oshara";
 
     public static $db;
 
